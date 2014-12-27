@@ -5,7 +5,7 @@ title: SoduKu Solver
 
 [**Responsory Link**](https://github.com/ZhuFengdaaa/SoduKu-Solver)
 
-![SudoKu-solver]({{ site.baseurl }}/images/SoduKu-Solver.png )
+![SudoKu-solver]({{ site.baseurl }}/assets/images/SoduKu-Solver.png )
 
 A fairly simple SuduKu-Solver written in Java, which I had finished with my teammate off and on for a week.
 	

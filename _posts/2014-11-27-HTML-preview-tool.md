@@ -10,17 +10,17 @@ As a newer in HTML, I felt tired to view what I had written in HTML. As most fre
 
 ###STEP 1
 
-![STEP1](/images/build-tool-step1.jpg "Step 1")
+![STEP1](/assets/images/build-tool-step1.jpg "Step 1")
  *Tools->Build System->New Build System*
 
 ###STEP 2
 
-![STEP2](/images/build-tool-step2.jpg "Step 2")
+![STEP2](/assets/images/build-tool-step2.jpg "Step 2")
  *Use windows command to open this file with default explorer*
 
 ###STEP 3
 
-![STEP3](/images/build-tool-step3.jpg "Step 3")
+![STEP3](/assets/images/build-tool-step3.jpg "Step 3")
  *Save it in Package->User directory and switch the default build system*
 
 =================================================>
