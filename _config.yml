@@ -27,17 +27,17 @@ navigation:
   url : /archive/
 
 # Author Details
-author:         'ZhuFengdaaa'
+author:         'Abdel Raoof Olakara'
 linkedin:       'http://zhufengdaaa.github.io/'
 twitter:        'http://zhufengdaaa.github.io/'
 facebook:       'http://zhufengdaaa.github.io/'
 gplus:          'https://plus.google.com/u/0/116811442309236138007/posts/p/pub'
 
 # Google Analytics
-#gahandler: 'UA-52149651-1'
+gahandler: 'UA-52149651-1'
 
 # Disqus
-disqushandler: 'Peter Zhu'
+#disqushandler: 'testingblogo'
 
 # Blog Configurations
 paginate: 10 # Posts per page on the blog index
