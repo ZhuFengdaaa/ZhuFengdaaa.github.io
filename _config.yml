@@ -10,7 +10,7 @@ permalink:        /blog/:year/:month/:day/:title
 title:            'Jekyll Metro'
 tagline:          'A Metro theme for Jekyll'
 description:      'A Sample blog using Jekyll Metro'
-url:              'http://localhost:4000'
+url:              'http://zhufengdaaa.github.io/'
 baseurl:          'http://zhufengdaaa.github.io/'
 
 # Navigation
@@ -34,7 +34,7 @@ linkedin:       'http://http://zhufengdaaa.github.io/'
 gplus:          'https://plus.google.com/u/0/116811442309236138007/posts/p/pub'
 
 # Google Analytics
-gahandler: 'UA-52149651-1'
+#gahandler: 'UA-52149651-1'
 
 # Disqus
 disqushandler: 'Peter Zhu'
