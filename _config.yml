@@ -11,7 +11,7 @@ title:            'Jekyll Metro'
 tagline:          'A Metro theme for Jekyll'
 description:      'A Sample blog using Jekyll Metro'
 url:              'http://localhost:4000'
-baseurl:          ''
+baseurl:          'http://zhufengdaaa.github.io/'
 
 # Navigation
 navigation:
@@ -27,17 +27,17 @@ navigation:
   url : /archive/
 
 # Author Details
-author:         'Abdel Raoof Olakara'
-linkedin:       'https://ae.linkedin.com/in/olakara/'
-twitter:        'https://twitter.com/olakara'
-facebook:       'https://www.facebook.com/olakara'
-gplus:          'https://plus.google.com/100425464897246255887/'
+author:         'ZhuFengdaaa'
+linkedin:       'http://http://zhufengdaaa.github.io/'
+#twitter:        'https://twitter.com/olakara'
+#facebook:       'https://www.facebook.com/olakara'
+gplus:          'https://plus.google.com/u/0/116811442309236138007/posts/p/pub'
 
 # Google Analytics
 gahandler: 'UA-52149651-1'
 
 # Disqus
-disqushandler: 'testingblogo'
+disqushandler: 'Peter Zhu'
 
 # Blog Configurations
 paginate: 10 # Posts per page on the blog index
