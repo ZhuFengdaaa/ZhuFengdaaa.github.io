@@ -10,8 +10,8 @@ permalink:        /blog/:year/:month/:day/:title
 title:            'Jekyll Metro'
 tagline:          'A Metro theme for Jekyll'
 description:      'A Sample blog using Jekyll Metro'
-url:              'http://zhufengdaaa.github.io/'
-baseurl:          'http://zhufengdaaa.github.io/'
+url:              ''
+baseurl:          ''
 
 # Navigation
 navigation:
