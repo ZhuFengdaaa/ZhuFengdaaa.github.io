@@ -17,13 +17,14 @@ description: Home Page for Jekyll Metro Theme
 				<a href="about/">
 					<div class="tile purple profile bord">
 						<h2 class="title">About Me</h2>
-						<p>Hello World, I am {{site.author}}.</p>
+						<p>Welcome, I am {{site.author}}.</p>
 					</div>
 				</a>
 		    </div>
 			<div class="col-md-2 col-sm-3 col-xs-6">
 				<a href="resume/" title="Resume" class="tile red bord icon-resume"></a>
 			</div>
+
 			<div class="col-md-2 col-sm-3 col-xs-6">
 				<div class="live-tile" data-mode="flip" data-delay="4000">
 					<div>
@@ -42,7 +43,7 @@ description: Home Page for Jekyll Metro Theme
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row" style="margin-top:25px">
 
 			<div class="col-md-4 col-sm-6 col-xs-12">
 				{% for post in site.posts offset:1 limit:1 %}
@@ -82,34 +83,6 @@ description: Home Page for Jekyll Metro Theme
 					{% endif %}
 				{% endfor %}
 			</div>
-		</div>
-
-		<div class="row" style="margin-bottom:25px">
-			<div data-delay="2000" data-mode="flip" class="live-tile flip ha fix-3">
-			<div class="col-md-2 col-sm-3 col-xs-6 flip-front ha" style="transform: rotateX(180deg); transition: all 500ms ease 0s;">
-				<a class="tile blue bord lk-ico" href="https://ae.linkedin.com/in/olakara/"></a>
-			</div>
-
-			<div class="col-md-2 col-sm-3 col-xs-6 flip-back ha" style="transform: rotateX(360deg); transition: all 500ms ease 0s;">
-				<a class="tile blue bord tw-ico" href="https://twitter.com/olakara"></a>
-			</div>
-		</div>
-
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.twitter}}"  class="tile blue bord tw-ico"></a>
-			</div>
-
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.facebook}}" class="tile blue bord fk-ico"></a>
-			</div>
-
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="feed.xml/" class="tile purple bord rs-ico"></a>
-			</div>
-
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<a href="{{site.gplus}}" class="tile orange bord gl-ico"></a>
-			</div>
 
 			<!-- Mini tile -->
 			<div class="col-md-2 col-sm-3 col-xs-6 rside">
@@ -120,8 +93,7 @@ description: Home Page for Jekyll Metro Theme
 					<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6">
 						<a href="{{site.twitter}}"  class="mtile blue bord tw-ico-sm"></a>
 					</div>
-				</div>
-				<div class="row">
+				
 					<div  class="col-md-6 col-sm-6 col-xs-6 rep-1">
 						<a href="{{site.facebook}}" class="mtile purple bord fk-ico-sm"></a>
 					</div>
@@ -131,5 +103,6 @@ description: Home Page for Jekyll Metro Theme
 				</div>
 			</div> <!-- End of Mini tile -->
 		</div>
+
 	</nav>
 </div>
