@@ -27,14 +27,28 @@ navigation:
   url : /archive/
 
 # Author Details
-author:         'Abdel Raoof Olakara'
+author:         'ZhuFengdaaa'
 linkedin:       'http://zhufengdaaa.github.io/'
 twitter:        'http://zhufengdaaa.github.io/'
 facebook:       'http://zhufengdaaa.github.io/'
 gplus:          'https://plus.google.com/u/0/116811442309236138007/posts/p/pub'
 
 # Google Analytics
-gahandler: 'UA-52149651-1'
+gahandler: ''
+
+footer-links:
+  dribbble: 
+  email: zhufengdaaa@gmail.com
+  facebook: 
+  flickr: 
+  github: ZhuFengdaaa
+  instagram: 
+  linkedin: 
+  pinterest: 
+  rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
+  google: None
+  twitter: None
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Disqus
 #disqushandler: 'testingblogo'

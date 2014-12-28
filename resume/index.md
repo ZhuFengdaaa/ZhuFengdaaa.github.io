@@ -6,8 +6,6 @@ theme: red
 ---
 Six years of experience in software development on Microsoft and Java technologies. Experienced in design and development of enterprise web applications, content management systems and enterprise application integration.
 
-![language](/assets/images/language-part.png "language-part")
-
 **Experience in Web Technology:**
 Building and Supporting web applications using Microsoft Technologies (ASP.Net & ASP.Net MVC). Developing UI using Ext JS and jQuery.
 
