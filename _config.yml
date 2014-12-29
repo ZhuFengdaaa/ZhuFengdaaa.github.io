@@ -34,7 +34,7 @@ facebook:       'http://zhufengdaaa.github.io/'
 gplus:          'https://plus.google.com/u/0/116811442309236138007/posts/p/pub'
 
 # Google Analytics
-gahandler: ''
+gahandler: 'UA-58081640-1'
 
 footer-links:
   dribbble: 
