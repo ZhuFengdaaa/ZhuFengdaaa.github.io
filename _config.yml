@@ -31,7 +31,7 @@ author:         'ZhuFengdaaa'
 linkedin:       'http://zhufengdaaa.github.io/'
 twitter:        'http://zhufengdaaa.github.io/'
 facebook:       'http://zhufengdaaa.github.io/'
-gplus:          'https://plus.google.com/u/0/116811442309236138007/posts/p/pub'
+gplus:          'https://plus.google.com/u/0/116811442309236138007/about/p/pub'
 
 # Google Analytics
 gahandler: 'UA-58081640-1'
@@ -46,9 +46,9 @@ footer-links:
   linkedin: 
   pinterest: 
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  google: None
+  google: https://plus.google.com/u/0/116811442309236138007/about/p/pub
   twitter: None
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: users/4388898/peter-zhu # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Disqus
 #disqushandler: 'testingblogo'

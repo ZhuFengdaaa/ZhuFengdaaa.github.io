@@ -1,37 +1,29 @@
 ---
 layout: page
-title: Welcome--by ZhuFengdaaa
-description: About Me page of Blog
+title: 关于本站
+description: --by ZhuFengdaaa
 theme: purple
 ---
 
-I am a web focused developer mostly working using Microsoft .Net technologies. Occasionally, I end up working on non web related projects. I am based in Abu Dhabi, United Arab Emirates and work for C4 Advanced Solution as Application Developer.
-This is my personal website and blog where I put down my thoughts, solutions to problems and learning notes.
-
-## Stack Overflow
-
-Stackoverflow is a online community I hang around a lot during my free time. You can find me answering questions on Sencha's Ext Js , C# and Java. Here is my flair:
-
-<a href="http://stackoverflow.com/users/4388898/peter-zhu">
-
-
-## About this Site
-*language-part shown as blow*
+*各种语言所占比例*
 
 ![language](/assets/images/language-part.png "language-part")
 
-This is a static site powered by Jekyll. The design was done by me and the theme is freely available on [Github](https://github.com/olakara/JekyllMetro). I have used Bootstrap, jQuery, icons from Metro Studio of Syncfusion and Github for hosting the site.
+##技术说明
+这是一个使用jekyll框架开发的静态网站，网站整体架构和部署语法参见 [Github](https://github.com/olakara/JekyllMetro). 我使用了Bootstrap制作按钮，JQuery制作动态效果，SVN icons和Metro Studio 制作图标，用 Github 作为静态网站的服务器。
 
-Technicals apart, this is my personal site where I plan to pen down my thoughts, technical experiences that I would like to share. But, the content and opnion that you see here are personal and not related to companies / clients i work with. And regarding the code you see there.. you may use it as per your discretion.
+##搭建目的
+除了技术，这也是我的个人博客。我可以随时分享我的想法，最近的技术心得，但是你所见的内容和观点都属于个人，和商业无关。
+<br/>**这里所有的东西都可以被转载，因为我们是朋友**
 
-## About this Theme
+## 关于主题
 
-Jekyll Metro is the result of wanting a clean and new theme for my personal site. I was initially inspired by the [Hyde theme](https://github.com/poole/hyde). but soon I was googling to see if there are any Metro inspired theme available.
-Since, I couldn't find one, I decided to built one for myself. One of the main goal of building my own theme was to have a modern responsive theme that looks good on mobile, tablet and desktop.
+这里我使用的主题--Jekyll Metro，致力于为我的个人博客搭建一个干净，全新的主题。 灵感源于windows 8 的Metro风格， [Hyde theme](https://github.com/poole/hyde). 但是后来我发现借助Bootstrap，更多的颜色和创意可以被实现，因此我就得到了现在这个主题。
 
-You are free to use or fork this theme. And any contribution to fixes of issues are welcome.
+*你可以任意使用这里的样式，如果有好的建议，可以向我提出。*
 
-## Contact Me
+## 联系本人
 
-For short messages and quick replies, you can contact me via [Google+](https://plus.google.com/u/0/116811442309236138007/posts/p/pub) For anything longer feel free to use the comments section below and I'll reply you by email.
+可以通过Google+ 联系我 [Google+](https://plus.google.com/u/0/116811442309236138007/posts/p/pub) 
+也可以向我发邮件。每页博客的下面都有我的gmail，github和google+地址
 
