@@ -30,5 +30,6 @@ Why I choose Jekyll?
 ![jekyll-structure]({{ site.baseurl }}/assets/images/post-Presentation/jekyll-structure.png)			
 
 ###让我来解释一下：
-						
+1. 侧边栏的制作
+2. 						
 

@@ -7,8 +7,8 @@ highlighter: pygments
 permalink:        /blog/:year/:month/:day/:title
 
 # Setup
-title:            'Jekyll Metro'
-tagline:          'A Metro theme for Jekyll'
+title:            'Le Petit Prince'
+tagline:          "Le Petit Prince's Planet" 
 description:      'A Sample blog using Jekyll Metro'
 url:              ''
 baseurl:          ''

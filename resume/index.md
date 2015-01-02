@@ -4,7 +4,7 @@ title: Start with Jekyll
 description: Why I choose Jekyll
 theme: red
 ---
-## Why I choose Jekyll?
+### Why I choose Jekyll?
 1. Jekyll is just static web pages. No database, so it is  **faster and lighter**.
 2. Also because it is a static web site. It's more **secure**. We don't need to worry about somebody may hack into the database and do something dangerous.
 3. Because we don't have database, It reduce our manipulation. We don't bother to configure our database. All we need to do is dealing with our front-end text and script.
