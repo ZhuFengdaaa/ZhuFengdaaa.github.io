@@ -20,7 +20,8 @@
     left: 0;
     z-index: 1000;
     display: block;
-    padding: 20px;
+    /**/
+    padding-right: 0;
     overflow-x: hidden;
     overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
   }
@@ -71,24 +72,59 @@
 }
 
 .left-nav {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
+    margin: 0;
+    padding: 0;
     list-style: none;
+    position: relative;
+    margin-left: -30px
 }
 
 .left-nav-item {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-    margin-bottom: -1px;
     font-size: 18px;
+    /*text-align: center;*/
+    text-indent: 100px;
+    line-height: 50px;
+}
+.left-nav-item a{
+    display: block;
+    text-decoration: none;
+    color:#fff;
 }
 
-.left-nav > li > a,
+/*背景对比色*/
+.purple .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #4D2488;
+}
+.red .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #8B162B;
+}
+.green .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #007700;
+}
+.blue .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #0062C4;
+}
+.orange .left-nav-item a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #C53E10;
+}
+/*.left-nav > li > a,
 .left-nav > li > a:hover,
 .left-nav > li > a:focus {
+    display: block;
     color: #fff;
     text-decoration:none;
-}
+}*/
 
 .alink {
     font-size: 18px;
@@ -98,15 +134,12 @@
   text-align: justify;
 }
 
-li.purple > a,
+l/*i.purple > a,
 li.purple > a:hover,
 li.purple > a:focus {
     color: #fff;
     background: #5133AB;
     text-decoration: none;
-}
-.purple >li :hover{
-    background-color: #382378;
 }
 
 li.blue > a,
@@ -140,7 +173,7 @@ li.green > a:focus {
     background: #00A600;
     text-decoration: none;
 }
-
+*/
 .btn-purple {
     color: #fff;
     background: #5133AB;
