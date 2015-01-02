@@ -1,16 +1,21 @@
 ---
 layout: page
-title: 关于本站
+title: 写在前面的话
 description: --by ZhuFengdaaa
 theme: purple
 ---
+###首先欢迎大家来到我的博客，先来介绍一下。
 
 *各种语言所占比例*
 
 ![language](/assets/images/language-part.png "language-part")
 
 ##技术说明
-这是一个使用jekyll框架开发的静态网站，网站整体架构和部署语法参见 [Github](https://github.com/olakara/JekyllMetro). 我使用了Bootstrap制作按钮，JQuery制作动态效果，SVN icons和Metro Studio 制作图标，用 Github 作为静态网站的服务器。
+这是一个使用jekyll框架开发的静态网站，网站整体架构和部署语法参见 [Github](https://github.com/olakara/JekyllMetro). 我使用了Bootstrap制作按钮，JQuery制作动态效果，SVN icons和Metro Studio 制作图标，用 [Github][1] 作为静态网站的服务器。[详见这里]({{site.baseurl/resume/}})
+
+**基本结构**
+
+![jekyll-structure]({{ site.baseurl }}/assets/images/post-Presentation/jekyll-structure.png)	
 
 ##搭建目的
 除了技术，这也是我的个人博客。我可以随时分享我的想法，最近的技术心得，但是你所见的内容和观点都属于个人，和商业无关。
@@ -24,6 +29,7 @@ theme: purple
 
 ## 联系本人
 
-可以通过Google+ 联系我 [Google+](https://plus.google.com/u/0/116811442309236138007/posts/p/pub) 
+可以通过 [Google+](https://plus.google.com/u/0/116811442309236138007/posts/p/pub)  联系我
 也可以向我发邮件。每页博客的下面都有我的gmail，github和google+地址
 
+[1]:(https://github.com/ZhuFengdaaa/ZhuFengdaaa.github.io)

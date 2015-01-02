@@ -1,9 +1,12 @@
 <aside>
+  <!-- 返回按钮 -->
   <div class="row">
     <div class="col-md-12 text-center">
         {% if page.path contains '_posts' %}
+        <!-- 如果该页面的路径有'_post'（说明是博文）那么后退按钮指向/blog -->
         <h1 class="text-center" style="margin-top:0px">&nbsp;<a href="/blog" class="icon icon-back"></a></h1>
         {% else %}
+        <!-- 否则指向Home -->
         <h1 class="text-center" style="margin-top:0px">&nbsp;<a href="/" class="icon icon-back"></a></h1>
         {% endif %}
   	</div>

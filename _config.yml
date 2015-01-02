@@ -25,6 +25,8 @@ navigation:
   url: /tags/
 - text: Archive
   url : /archive/
+- text: Search
+  url : /search.html/
 
 # Author Details
 author:         'ZhuFengdaaa'
@@ -48,7 +50,7 @@ footer-links:
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
   google: https://plus.google.com/u/0/116811442309236138007/about/p/pub
   twitter: None
-  stackoverflow: users/4388898/peter-zhu # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  stackoverflow: #users/4388898/peter-zhu # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Disqus
 #disqushandler: 'testingblogo'

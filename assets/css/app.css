@@ -105,6 +105,9 @@ li.purple > a:focus {
     background: #5133AB;
     text-decoration: none;
 }
+.purple >li :hover{
+    background-color: #382378;
+}
 
 li.blue > a,
 li.blue > a:hover,
