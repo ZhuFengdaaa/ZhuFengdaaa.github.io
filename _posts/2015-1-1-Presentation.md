@@ -33,3 +33,7 @@ Why I choose Jekyll?
 1. 侧边栏的制作
 2. 						
 
+##jekyll Meto improving
+1. Add sidebar background-color effect
+2. Add "search"column into the sidebar
+3. "page" and "post" layout modify.*content-wrapper col-md-10 -> col-md-9; col-sm-10 -> col-sm-9*. Set the left margin. 
