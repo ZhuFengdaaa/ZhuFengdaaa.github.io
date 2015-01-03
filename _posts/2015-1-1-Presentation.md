@@ -33,8 +33,29 @@ Why I choose Jekyll?
 1. 侧边栏的制作
 2. 						
 
+
 ##jekyll Meto improving
+
 1. Add sidebar background-color effect
+_modify files: app.css_
+
 2. Add "search"column into the sidebar
-3. "page" and "post" layout modify.*content-wrapper col-md-10 -> col-md-9; col-sm-10 -> col-sm-9*. Set the left margin. 
-4. Add SVG button into the footer.html footer-link into the config.yml
+_modify files: config.yml_
+
+3. Change side bar layout  *a bit*
+_modify files: sidebar.html_
+ 
+4. "page" and "post" layout modify.*content-wrapper col-md-10 -> col-md-9; col-sm-1·0 -> col-sm-9*. Set the left margin.
+_modify files: page.html,/blog/index.html,post.html_
+
+5. bootstrap-> *.img{(add) width:100%;}*  
+_modify files: bootstrap.html_
+
+6. Add SVG button into the footer.html footer-link into the config.yml
+add svg-icons.html  /svg-icons/
+
+7. *Add scroll-up buttom in "page" and "post"*
+_modify files: page.html; post.html; /blog/index.html; app.css_
+
+8. correct a spelling mistake in footer.html<br/> *class="col-ms-12" change to class="col-sm-12"*
+_modify files: footer.html_

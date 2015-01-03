@@ -1,6 +1,7 @@
 --- 
 layout: master 
 ---
+
 <div class="container-fluid">
     <div class="row">
         {% if page.theme And page.theme != "" And page.theme != nil %}<!-- 网页颜色在app.css中，是开发者自定义的css -->
@@ -22,3 +23,25 @@ layout: master
         <!-- row -->
 </div>
 <!-- container -->
+<a href="#" class="scrollToTop"></a>
+<script type="text/javascript">
+    $(document).ready(function(){
+    
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('.scrollToTop').fadeIn();
+        } else {
+            $('.scrollToTop').fadeOut();
+        }
+    });
+    
+    //Click event to scroll to top
+    $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+    
+});
+</script>
+
