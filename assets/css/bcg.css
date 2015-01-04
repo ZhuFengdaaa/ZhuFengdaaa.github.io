@@ -63,6 +63,11 @@ body {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+.tag1-icon {
+	background-image: url('/assets/images/tag-icon1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
 
 
 /*Default*/
