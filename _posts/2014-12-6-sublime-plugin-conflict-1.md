@@ -1,6 +1,7 @@
 ---
 layout: post
 title: plugin conflict in sublime (1)
+tag: sublime
 ---
 
 *the first plugin conflict in sublime I found*

@@ -15,16 +15,18 @@ layout: master
         {{ content }}
         <br/>
         <span class="fa fa-tag"></span>
-        Tags:
-        {% if page.tags %}
-          {% for tag in page.tags %}
-        <a href="/tags/{{tag}}">
-          <span class="label label-primary">{{tag}}</span>
-        </a>
-        {% endfor %}
-        {% else %}  
-          None
-        {% endif %}
+        {% if !(page.path contains '_posts') %}
+	        Tags:
+	        {% if page.tags %}
+	          {% for tag in page.tags %}
+	        <a href="/tags/{{tag}}">
+	          <span class="label label-primary">{{tag}}</span>
+	        </a>
+	        {% endfor %}
+	        {% else %}  
+	          None
+	        {% endif %}
+	    {% endif %}
         <br/>
         <br/>
       </article>

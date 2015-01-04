@@ -1,6 +1,7 @@
 ---
 layout: post
 title: create a preview of HTML files with sumblime
+tag: sublime
 ---
 
 As a newer in HTML, I felt tired to view what I had written in HTML. As most freshmen, I use`ctrl+S` to *Save file*, and find the path where the file is, and then open it with explorer.
