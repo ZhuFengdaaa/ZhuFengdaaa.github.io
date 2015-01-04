@@ -37,7 +37,35 @@ body {
 .font-fix {
 	font-size: 18px;
 }
+/*User*/
+.about-icon {
+	background-image: url('/assets/images/about-icon.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.about1-icon {
+	background-image: url('/assets/images/about1-icon.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.resume-icon {
+	background-image: url('/assets/images/resume-icon.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.jekyll-logo {
+	background-image: url('/assets/images/jekyll-logo.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.tag-icon {
+	background-image: url('/assets/images/tag-icon.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
 
+
+/*Default*/
 .fk-ico {
 	background-image: url('/assets/images/fk_ico.png');
 	background-position: center;
@@ -98,14 +126,14 @@ body {
 	background-repeat: no-repeat;
 }
 
-.icon-resume {
-	background-image: url('/assets/images/icon-resume.png');
+.icon-blog1 {
+	background-image: url('/assets/images/icon-blog1.png');
 	background-position: center;
 	background-repeat: no-repeat;
 }
 
-.icon-resume-small {
-	background-image: url('/assets/images/icon-resume-small.png');
+.icon-blog1-small {
+	background-image: url('/assets/images/icon-blog1-small.png');
 	background-position: center;
 	background-repeat: no-repeat;
 }
