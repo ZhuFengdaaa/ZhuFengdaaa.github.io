@@ -92,17 +92,15 @@
 }
 
 .left-nav {
-    /*margin-bottom: 20px;*/
     margin: 0;
     padding: 0;
     list-style: none;
     position: relative;
-    margin-left: -30px
+    margin-left: -30px;
 }
 
 .left-nav-item {
     font-size: 18px;
-    /*text-align: center;*/
     text-indent: 100px;
     line-height: 50px;
 }
@@ -138,13 +136,6 @@
     color: #fff;
     background: #C53E10;
 }
-/*.left-nav > li > a,
-.left-nav > li > a:hover,
-.left-nav > li > a:focus {
-    display: block;
-    color: #fff;
-    text-decoration:none;
-}*/
 
 .alink {
     font-size: 18px;

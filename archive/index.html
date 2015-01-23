@@ -1,51 +1,20 @@
 ---
 layout: page
 title: Archive
-description: A page with tag cloud and display of articles tag wice
-theme: green
+description: Page with links to all old articles of the blog
+theme: blue
 ---
-    <div class="row">
-        <div class="col-md-2">
-        </div>
-        <div class="col-md-8">
-            <section class="tags">
-                <ul class="nav nav-pills">
-                    {% for tag in site.tags %}
-                    <li class="red" style="margin:5px">
-                        <a href="/archive/{{ tag | first | slugize }}/"> {{ tag | first }}&nbsp;<span class="badge">{{ tag | last | size}}</span></a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </section>
-        
-        </div>
-        <div class="col-md-2">
-        </div>
-    </div>
-    <hr/>
-    <div class="row">
-        <div class="col-md-12">
-            <section>
-            {% capture tags %}
-                {% for tag in site.tags %}
-                    {{ tag[0] }}
-                {% endfor %}
-            {% endcapture %}
-            
-            {% assign sortedtags = tags | split:' ' | sort %}
-            
-            {% for tag in sortedtags %}
-                <h3>{{tag}}</h3>
-                <ul>
-                    {% for post in site.posts %}
-                        {% for otag in post.tags %}
-                            {% if tag == otag %}
-                                <li class="alink"><a href="{{ post.url }}" class="red-link">{{ post.title }}</a></li>
-                            {% endif %}
-                        {% endfor %}
-                    {% endfor %}    
-                </ul>
-            {% endfor %}
-            </section>
-        </div>
-    </div>
+    <ul>
+      {% for post in site.posts %}
+        {% unless post.next %}
+          <h3>{{ post.date | date: '%Y' }}</h3>
+        {% else %}
+          {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+          {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
+          {% if year != nyear %}
+            <h3>{{ post.date | date: '%Y' }}</h3>
+          {% endif %}
+        {% endunless %}
+        <li class="alink"><a href="{{ post.url }}" class="green-link">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
