@@ -13,25 +13,6 @@ description: Home Page for Jekyll Metro Theme
 	</header>
 	<nav>
 		<div class="row" style="margin-top:25px">
- 			<!-- <div class="col-md-4 col-sm-6 col-xs-12">
-				<a href="about/">
-					<div class="tile purple profile bord">
-						<h2 class="title">About Me</h2>
-						<p>Welcome, I am {{site.author}}.</p>
-					</div>
-				</a>
-		    </div> -->
-
-			<!-- <div class="col-md-2 col-sm-3 col-xs-6">
-				<div class="live-tile" data-mode="flip" data-delay="4000">
-					<div>
-						<a href="/resume/" title="Resume" class="tile red bord resume-icon"></a>
-					</div>
-					<div>
-						<a href="/resume/" title="Resume" class="tile grey bord jekyll-logo"></a>
-					</div>
-				</div>
-			</div> -->
 
 			<div class="col-md-2 col-sm-3 col-xs-6">
 				<div class="live-tile" data-mode="flip" data-delay="4000">
@@ -89,7 +70,7 @@ description: Home Page for Jekyll Metro Theme
 					<div class="tile blue bord">
 						<h3 class="title">Latest Article</h3>
 						<h4 class="title">{{ post.title }}</h4>
-						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
+						<p> {{ post.content | strip_html | truncate: 45 }}</p>
 					</div>
 				</a>
 				{% endfor %}
