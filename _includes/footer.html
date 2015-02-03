@@ -1,6 +1,11 @@
 <footer class="row">
       <div class="col-sm-12 text-center" id="footer">
+            {% if page.title == "Home" %}
+            <br/><br/>
+            {% endif %}
+            {% if page.title != "Home" %}
             <hr/>
+            {% endif %}
             {% include svg-icons.html %}
       </div>
 </footer>
