@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="test.css">
+    <script src="jquery-2.1.1.min.js"></script>
+    <script>
+
+    var Imgnum = 4;
+    var inouttime = 1;
+    var changePeriod=5;
+    var steps = 30;
+    var i;var j;
+    var Period = inouttime / steps;
+    var changeValue= Period/inouttime;
+
+    function Randompick() {
+        i = Math.floor(Math.random() * Imgnum) + 1;
+        while ($('#img' + i).css('opacity') == '1')
+            i = Math.floor(Math.random() * Imgnum) + 1;
+        return i;
+    }
+
+    function RandomStart() {
+        i = Randompick();
+        $('#img' + i).css('opacity', 1);
+    }
+
+    function Min(i, j) {
+        if (i > j)
+            return j;
+        else return i;
+    }
+
+    function Max(i, j) {
+        if (i > j)
+            return i;
+        else return j;
+    }
+    function Fadeinout()
+    {
+		$('#img' + i).css('opacity', Min(parseFloat($('#img' + i).css('opacity')) + changeValue, 1)); 
+        $('#img' + j).css('opacity', Max(parseFloat($('#img' + j).css('opacity')) - changeValue, 0.0));
+        console.log($('#img' + i).css('opacity'));
+        console.log($('#img' + j).css('opacity'));
+        if(($('#img' + i).css('opacity')==1)&&($('#img' + j).css('opacity')==0))
+        {
+        	//alert('abort');
+        	$('#img'+i).css('opacity',1);
+        	$('#img'+j).css('opacity',0);
+        	return;
+        }
+        setTimeout("Fadeinout()",Period*1000);
+    }
+    function RandomChange() {
+        i = Randompick();
+        // i fade in, j fade out
+        for (j = 1; j <= Imgnum; j++) {
+            if ($('#img' + j).css('opacity') == '1')
+                break;
+        }
+        Fadeinout();
+    }
+    setTimeout('RandomStart()',0);
+    setInterval('RandomChange()',changePeriod*1000);
+    </script>
+</head>
+
+<body>
+    <div id="background_cycler">
+        <img id="img1" src="bcg1.jpg" style="opacity:0;" />
+        <img id="img2" src="bcg2.jpg" style="opacity:0;" />
+        <img id="img3" src="bcg3.jpg" style="opacity:0;" />
+        <img id="img4" src="bcg4.jpg" style="opacity:0;" />
+    </div>
+</body>
+
+</html>
