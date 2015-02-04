@@ -10,10 +10,14 @@ tag: Matlab
 Empty Matrix: a=[];
 ##plot
 ###Two-Dementional Graph
-* plot(t,y) *t,y are vectors*
-* `x=[-pi:0.05:-1.8,-1.799:0.001:-1.2,-1.2:0.05:1.2]` *Enlarge some parts and reduce overlap points*
+* plot(t,y) *t,y are 1×n vectors*
+* 如果我们想让函数急剧变化部分采样点比平缓部分更多，可以将x矩阵分段写`x=[-pi:0.05:-1.8,-1.799:0.001:-1.2,-1.2:0.05:1.2]` *Enlarge some parts and reduce overlap points*
 * plotyy(x,y1,x,y2) *multi-Vertical axis graph*, for which has two much different graph.
 * polar(theta,rho) *ploar(θ,ρ)*
+* 图例(legend) *Usage* `legend('Sample','True Value','Sim Result');`
+* X轴，y轴标签，`Xlabel('xlabelname');` `ylabel(ylabelname):`
+* At the upper left corner of the figure window, you can click *File->Save As* and save image as .jpg. 
+![savejpg](\assets\images\2015-02-04\savejpg.jpg)
 
 ###Multidimensional Graph
 * Implicit Function *ezplot()*`>>ezplot('x^2+y^2-25')`  <==> {{ f1 }}
@@ -28,7 +32,9 @@ Empty Matrix: a=[];
 * f1=diff(f,x,n) 
 
 ###Symbolic Substitution
-* 
+
+
+
 
 
 
