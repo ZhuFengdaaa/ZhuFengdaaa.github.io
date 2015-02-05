@@ -1,8 +1,9 @@
 # Configurations
+encoding: utf-8
+highlighter: true
 markdown: rdiscount
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
-highlighter: rouge
-#pygments: true
+highlighter: pygments
 
 # Permalinks
 permalink:        /blog/:year/:month/:day/:title
