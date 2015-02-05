@@ -1,7 +1,8 @@
 # Configurations
 markdown: rdiscount
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
-highlighter: pygments
+highlighter: rouge
+#pygments: true
 
 # Permalinks
 permalink:        /blog/:year/:month/:day/:title
