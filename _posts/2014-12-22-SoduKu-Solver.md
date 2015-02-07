@@ -35,5 +35,3 @@ If too many iterations go by without improvement, the entire population might be
 [Reference Link:](http://fendrich.se/blog/2010/05/05/solving-sudoku-with-genetic-algorithms/ "Reference Link")
 
 [Chinese Documentation Download](https://github.com/ZhuFengdaaa/SoduKu-Solver/raw/master/%E9%81%97%E4%BC%A0%E7%AE%97%E6%B3%95%E6%B1%82%E8%A7%A3%E4%B9%9D%E5%AE%AB%E6%A0%BC%E6%95%B0%E7%8B%AC.docx)
-
-[应急物流网络规划方法研究](\files\Note\001.pdf)
