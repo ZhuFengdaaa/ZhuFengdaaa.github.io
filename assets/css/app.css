@@ -1,4 +1,11 @@
 /*User---*/
+.avatar{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin-top: 15px;
+    border-radius: 50%;
+}
 .scrollToTop{
     width:48px; 
     height:48px;

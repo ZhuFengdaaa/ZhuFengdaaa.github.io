@@ -2,8 +2,8 @@
 encoding: utf-8
 markdown: rdiscount
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
-highlighter: pygments
-# highlighter: rouge
+# highlighter: pygments
+highlighter: rouge
 
 # Permalinks
 permalink:        /blog/:year/:month/:day/:title
@@ -12,6 +12,7 @@ permalink:        /blog/:year/:month/:day/:title
 title:            'Le Petit Prince'
 tagline:          "Le Petit Prince's Planet" 
 description:      'A Sample blog using Jekyll Metro'
+avatarurl:        "https://lh3.googleusercontent.com/-IgDEAF7bWp4/AAAAAAAAAAI/AAAAAAAAABU/zsf3lC1FK3E/photo.jpg?sz=50"
 url:              ''
 baseurl:          ''
 
@@ -31,7 +32,7 @@ author:         'ZhuFengdaaa'
 linkedin:       'http://zhufengdaaa.github.io/'
 twitter:        'http://zhufengdaaa.github.io/'
 facebook:       'http://zhufengdaaa.github.io/'
-gplus:          'https://plus.google.com/u/0/116811442309236138007/about/p/pub'
+gplus:          'https://plus.google.com/u/0/116811442309236138007/posts'
 
 # Google Analytics
 gahandler: 'UA-58081640-1'
@@ -46,7 +47,7 @@ footer-links:
   linkedin: 
   pinterest: 
   rss: # just type anything here for a working RSS icon, make sure you set the "url" above!
-  google: https://plus.google.com/u/0/116811442309236138007/about/p/pub
+  google: https://plus.google.com/u/0/116811442309236138007/posts
   twitter: None
   stackoverflow: #users/4388898/peter-zhu # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
