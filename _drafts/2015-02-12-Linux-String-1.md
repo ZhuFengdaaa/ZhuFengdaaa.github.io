@@ -23,7 +23,7 @@ tag: Shell
 
 [tutorial](http://www.cyberciti.biz/faq/unix-linux-replace-string-words-in-many-files/)
 
-{% highlight javascript %}
+{% highlight shell %}
 sed -i 's/new string/old string/g' *.txt
 {% endhighlight %}
 
