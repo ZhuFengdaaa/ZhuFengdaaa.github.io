@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Linux Shell 简单字符串处理
-tag: Shell
+title: Linux Bash 简单字符串处理
+tag: Bash
 ---
 
 ###需求
@@ -13,7 +13,7 @@ tag: Shell
 [高亮问题在Github一直没解决 ╮(╯▽╰)╭，我也是在stackoverflow上看到的临时办法 ](https://github.com/jekyll/jekyll/issues/2789)
 
 ###任务
-* 我们设计一个bash小程序，来完成上述的*命令自动输入*和*字符串切换*
+* 我们设计一个Bash小程序，来完成上述的*命令自动输入*和*字符串切换*
 
 我们先来预习基本知识
 
@@ -23,13 +23,13 @@ tag: Shell
 
 [tutorial](http://www.cyberciti.biz/faq/unix-linux-replace-string-words-in-many-files/)
 
-{% highlight shell %}
+{% highlight Bash %}
 sed -i 's/new string/old string/g' *.txt
 {% endhighlight %}
 
 ####从键盘读取变量
 
-{% highlight javascript %}
+{% highlight Bash %}
 read variable
 {% endhighlight %}
 
@@ -37,7 +37,7 @@ read variable
 
 [source](http://stackoverflow.com/questions/369758/how-to-trim-whitespace-from-bash-variable)
 
-{% highlight javascript %}
+{% highlight Bash %}
 input="$input" | sed 's/^ *//'
 或
 input="$input" | sed 's/^[ \t]*//'
@@ -51,7 +51,7 @@ input="$input" | sed 's/^[ \t]*//'
 ####判断字符串是否为空
 
 三种写法
-{% highlight javascript %}
+{% highlight Bash %}
 if [ -z "$str" ]; then
    echo "Str is null"
 fi
@@ -69,19 +69,19 @@ fi
 如果读入了一个空串（即输入全是空格或者只有回车，read函数返回一个空串，
 有点像c语言里的std::cin）那么我们就把当前时间作为commit message。
 
-{% highlight javascript %}
+{% highlight Bash %}
 input=`date +%Y-%m-%d-%H-%M-%S`
 {% endhighlight %}
 
 注：shell在赋值的时候变量前不加`$`，而在引用的时候变量前加`$`作为标识符。
-{% highlight javascript %}
+{% highlight Bash %}
 `date +%Y-%m-%d-%H-%M-%S` 
 {% endhighlight %}
 是执行 shell 下的 date 命令，%Y,%m,%d,都是命令 date 的参数，分别对应年月日时分秒。左右加 ` 表示中间执行的是shell命令（否则将 date +%Y-%m-%d-%H-%M-%S 作为字符串处理。将返回值赋给input。
 
 附上最终代码
 
-{% highlight javascript %}
+{% highlight Bash %}
 sed -i 's/# highlighter: pygments/highlighter: pygments/g' exp.yml
 sed -i 's/highlighter: rouge/# highlighter: rouge/g' exp.yml
 echo 'Input commit message:'
