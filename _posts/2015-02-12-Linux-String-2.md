@@ -8,7 +8,7 @@ tag: Bash
 接上一篇博客，现在我们有这几个问题，
 
 * 我们要把 git push 和 jekyll s 结合起来，这就要求我们传入参数。
-* 还发现了一个bug，如果简简单单地{% highlight Bash %}sed -i 's/highlighter: rouge/# highlighter: rouge/g' exp.yml{% endhighlight %}当同样的命令运行多次后，效果就是{% highlight Bash %}# # # # # # # # # # # # # # highlighter: rouge{% endhighlight %}* 这就要求我们搜索字符串，如果该行已被注释掉--(前面有 #）那么我们跳过，否则注释。
+* 还发现了一个bug，如果简简单单地{% highlight Bash %}sed -i 's/highlighter: rouge/# highlighter: rouge/g' exp.yml{% endhighlight %}当同样的命令运行多次后，效果就是{% highlight Bash %}# # # # # # # # # # # # # # highlighter: rouge{% endhighlight %}* 这就要求我们搜索字符串。这里我用了整行替换，如果该行有pygments关键字则整行替换为highligt: pygments。（虽然不够严密，但是现在够用了，反正_config.yml 后面没有出现过rouge关键字）
 
 ####传入参数
 
@@ -30,7 +30,7 @@ echo '$3 = ' $3
 
 一般的小脚本我们可以用手动处理，$1,$2,$3来设置参数，但是既然是学习，我们就要挖得深点，现在我们来学习sh中选项的使用，用shell自带的getopts来解析选项和参数。
 
-*参数和选项的区别
+* 参数和选项的区别
 
 {% highlight Bash %}
 shell_name para1 para2 para3 #这是参数，用 $0,$1,$2...调用
@@ -70,3 +70,17 @@ echo 准备处理余下的参数：
 echo "Other Params: $@"
 {% endhighlight %}
 
+####修复上次的bug
+如果简简单单地{% highlight Bash %}sed -i 's/highlighter: rouge/# highlighter: rouge/g' exp.yml{% endhighlight %}当同样的命令运行多次后，效果就是{% highlight Bash %}# # # # # # # # # # # # # # highlighter: rouge{% endhighlight %}* 这就要求我们搜索字符串。这里我用了grep整行替换，如果该行有pygments关键字则整行替换为highligt: pygments。（虽然不够严密，但是现在够用了，反正_config.yml 后面没有出现过rouge关键字）
+
+[grep函数用法](http://www.lampweb.org/linux/3/27.html)
+
+{% highlight Bash %}
+antiCommentString="s/"`grep pygments exp.yml`"/highlighter: pygments/g"
+commentString="s/"`grep rouge exp.yml`"/# highlighter: rouge/g"
+			
+sed -i "$antiCommentString" exp.yml
+sed -i "$commentString" exp.yml
+{% endhighlight %}
+
+[最终成果]()

@@ -10,7 +10,7 @@ tag: Bash
 * 我们可以在平时的小修改中用*日期-时间*来作为commit的message
 * 由于Github不兼容代码高亮插件rouge，push到远程的时候我们只能用pygments作为代码高亮插件，这没啥。但苦逼的是，由于windows与pygments不兼容，我们在本地预览只能用rouge。所以我们要经常切换
 
-[高亮问题在Github一直没解决 ╮(╯▽╰)╭，我也是在stackoverflow上看到的临时办法 ](https://github.com/jekyll/jekyll/issues/2789)
+[高亮问题在Github一直没解决 ╮(╯▽╰)╭，我也是在 Github 上看到的临时办法 ](https://github.com/jekyll/jekyll/issues/2789)
 
 ###任务
 * 我们设计一个Bash小程序，来完成上述的*命令自动输入*和*字符串切换*
@@ -21,7 +21,7 @@ tag: Bash
 
 ####字符串的删改
 
-[tutorial](http://www.cyberciti.biz/faq/unix-linux-replace-string-words-in-many-files/)
+[Tutorial](http://www.cyberciti.biz/faq/unix-linux-replace-string-words-in-many-files/)
 
 {% highlight Bash %}
 sed -i 's/new string/old string/g' *.txt
@@ -35,7 +35,7 @@ read variable
 
 ####去掉前缀空格
 
-[source](http://stackoverflow.com/questions/369758/how-to-trim-whitespace-from-bash-variable)
+[Reference Source](http://stackoverflow.com/questions/369758/how-to-trim-whitespace-from-bash-variable)
 
 {% highlight Bash %}
 input="$input" | sed 's/^ *//'
@@ -82,8 +82,8 @@ input=`date +%Y-%m-%d-%H-%M-%S`
 附上最终代码
 
 {% highlight Bash %}
-sed -i 's/# highlighter: pygments/highlighter: pygments/g' exp.yml
-sed -i 's/highlighter: rouge/# highlighter: rouge/g' exp.yml
+sed -i 's/# highlighter: pygments/highlighter: pygments/g' _config.yml
+sed -i 's/highlighter: rouge/# highlighter: rouge/g' _config.yml
 echo 'Input commit message:'
 read input
 
