@@ -17,6 +17,7 @@ tag: Shell
 
 
 可以用这段代码测试，
+
 {% highlight shell %}
 #!/bin/bash
 
@@ -30,6 +31,7 @@ echo '$3 = ' $3
 一般的小脚本我们可以用手动处理，$1,$2,$3来设置参数，但是既然是学习，我们就要挖得深点，现在我们来学习sh中选项的使用，用shell自带的getopts来解析选项和参数。
 
 *参数和选项的区别
+
 {% highlight shell %}
 shell_name para1 para2 para3 #这是参数，用 $0,$1,$2...调用
 
