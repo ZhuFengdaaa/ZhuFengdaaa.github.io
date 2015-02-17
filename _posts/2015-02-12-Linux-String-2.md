@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Linux Shell 参数选项解析
-tag: Shell
+tag: Bash
 ---
 
 ###需求
 接上一篇博客，现在我们有这几个问题，
 
 * 我们要把 git push 和 jekyll s 结合起来，这就要求我们传入参数。
-* 还发现了一个bug，如果简简单单地{% highlight shell %}sed -i 's/highlighter: rouge/# highlighter: rouge/g' exp.yml{% endhighlight %}当同样的命令运行多次后，效果就是{% highlight shell %}# # # # # # # # # # # # # # highlighter: rouge{% endhighlight %}* 这就要求我们搜索字符串，如果该行已被注释掉--(前面有 #）那么我们跳过，否则注释。
+* 还发现了一个bug，如果简简单单地{% highlight Bash %}sed -i 's/highlighter: rouge/# highlighter: rouge/g' exp.yml{% endhighlight %}当同样的命令运行多次后，效果就是{% highlight Bash %}# # # # # # # # # # # # # # highlighter: rouge{% endhighlight %}* 这就要求我们搜索字符串，如果该行已被注释掉--(前面有 #）那么我们跳过，否则注释。
 
 ####传入参数
 
@@ -32,7 +32,7 @@ echo '$3 = ' $3
 
 *参数和选项的区别
 
-{% highlight shell %}
+{% highlight Bash %}
 shell_name para1 para2 para3 #这是参数，用 $0,$1,$2...调用
 
 shell_name -d para -v   #-d是选项，后面可以加参数，也可以不加，如果不加，称为开关选项，参数值为true或false
