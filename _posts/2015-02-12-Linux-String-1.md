@@ -81,7 +81,7 @@ input=`date +%Y-%m-%d-%H-%M-%S`
 
 附上最终代码
 
-{% highlight Bash %}
+{% highlight Bash linenos %}
 sed -i 's/# highlighter: pygments/highlighter: pygments/g' _config.yml
 sed -i 's/highlighter: rouge/# highlighter: rouge/g' _config.yml
 echo 'Input commit message:'

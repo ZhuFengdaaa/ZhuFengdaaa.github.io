@@ -24,6 +24,8 @@ navigation:
   url: /blog/
 - text: Archive
   url : /archive/
+- text: Daily
+  url : /daily/
 - text: Search
   url : /search
 
