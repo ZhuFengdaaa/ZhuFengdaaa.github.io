@@ -145,6 +145,24 @@
     background: #C53E10;
 }
 
+.purple .left-nav-selected {
+  background: #4D2488;
+}
+
+.red .left-nav-selected {
+  background: #8B162B;
+}
+
+.green .left-nav-selected {
+    background: #007700;
+}
+.blue .left-nav-selected {
+    background: #0062C4;
+}
+.orange .left-nav-selected {
+    background: #C53E10;
+}
+
 .alink {
     font-size: 18px;
 }

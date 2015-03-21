@@ -1,27 +1,27 @@
 <aside>
-  <!-- 返回按钮 -->
-  <div class="row">
-    <div class="col-md-12">
-    <br/>
-    
-        {% if page.path contains '_posts' %}
-        <!-- 如果该页面的路径有'_post'（说明是博文）那么后退按钮指向/blog -->
-        <h1 class="text-center" style="margin-top:0px"><a href="/blog" class="icon icon-back"></a></h1>
-        {% else %}
-        <!-- 否则指向Home -->
-        <h1 class="text-center" style="margin-top:0px"><a href="/" class="icon icon-back"></a></h1>
-        {% endif %}
-  	</div>
-  </div>
-  <div class="row">
-      <div class="col-md-12">
-        <ul class="left-nav">
-        {% for link in site.navigation %}
-          <li class="left-nav-item">
-            <a href="{{link.url}}">{{link.text}}</a>
-          </li>
+    <div class="row">
+        <div class="col-md-12">
+            <br/> {% if page.path contains '_posts' %}
+            <!-- 如果该页面的路径有'_post'（说明是博文）那么后退按钮指向/blog -->
+            <h1 class="text-center" style="margin-top:0px"><a href="/blog" class="icon icon-back"></a></h1> {% else %}
+            <!-- 否则指向Home -->
+            <h1 class="text-center" style="margin-top:0px"><a href="/" class="icon icon-back"></a></h1> {% endif %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="left-nav">
+                {% for link in site.navigation %} 
+                {% capture pageurl %}{{link.url}}{{"index.html"}}{% endcapture %}
+          {% if page.url == pageurl or (link.text == 'Blog' and page.id) %}
+            <li class="left-nav-item left-nav-selected">{{link.text}}</li>
+          {% else %}
+            <li class="left-nav-item">
+              <a href="{{link.url}}">{{link.text}}</a>
+            </li>
+          {% endif %}
         {% endfor %}
         </ul>
-  	</div>
-  </div>	
+    </div>
+  </div>
 </aside>
