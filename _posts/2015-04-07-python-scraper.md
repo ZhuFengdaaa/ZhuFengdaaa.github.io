@@ -152,6 +152,126 @@ get_page_images(index_url)
 
 {% endhighlight %}
 
+---
+###并行处理优化
+
+现在的脚本可以成功运行了，如果我要爬几百张图可能得等上几个小时。我们要找到我们程序的瓶颈，然后想办法优化，不是吗？
+
+我们程序的流程：加载HTML代码0.5s->获取URL0.0s->下载图片2～3s。
+
+看出问题在哪了吗？
+
+我们使用一个拥有8个可并行化进程的进程池（进程数为CPU核数的2倍），同时下载图片。
+
+代码非常简洁：
+
+{% highlight python %}
+from multiprocessing import Pool
+
+def show_video_stats(options):
+    p = Pool(8)
+    p.map(get_page_images, [search_url1,search_url2,search_url3])
+{% endhighlight %}
+
+###处理异常
+在下载过程中会出现一些为止异常。如果你不及时处理异常的话，那么异常就会一层层地抛出，直到程序中止为止，这些异常可能只是找不到图片，或者网络连接过慢。如果因为这些外部因素而造成我们程序的中止，以致再跑一遍的话，是非常不合算的。所以我们要加上异常的捕获（但是可以不处理，直接pass）
+
+{% highlight python %}
+try:
+	#用这个函数从URL下载文件，保存到PATH中
+	data = urllib.request.urlretrieve(url,path)
+except:
+	pass
+{% endhighlight %}
+
+###最终版
+从[dribbble](www.dribbble.com)上最后抓下来2G的资源，耗时半个小时。感觉还是挺满意的。
+
+最终代码如下：
+
+{% highlight python %}
+import requests
+import bs4
+import urllib.request
+import os
+from multiprocessing import Pool
+
+root_url = 'https://dribbble.com/'
+search_url1 = 'search?q=mobile'
+search_url2 = 'search?q=material+design'
+search_url3 = 'search?q=metro'
+
+def get_page_images(search_url):
+	try:
+		img_url_list = get_page_urls(root_url+search_url)
+		#切片过滤多出来的链接
+		for _url in img_url_list[:23:2]:
+			img_url = get_img_url(_url)
+			print(img_url)
+			for url in img_url:
+				filename = url.split('/')[-1].split('.')[0]
+				file_ext = '.'+url.split('.')[-1]
+				foldername = search_url.split('=')[-1]
+
+				#如果有文件夹，就在文件夹里保存图片，
+				#如果没有该文件夹，那么创建foldername的新文件夹
+				if os.path.exists("D:/Python/pycon-scraper/img/"+foldername+"/") == 0:
+					os.mkdir("D:/Python/pycon-scraper/img/"+foldername+"/")
+
+				print(filename)
+				print(file_ext)
+				path = 'D:/Python/pycon-scraper/img/'+foldername+"/"+filename+file_ext
+				print(path)
+
+				try:
+					#用这个函数从URL下载文件，保存到PATH中
+					data = urllib.request.urlretrieve(url,path)
+				except:
+					pass
+
+
+		next_page = has_next_page(root_url+search_url)
+		if next_page:
+			print("yes")
+			get_page_images(next_page[0])#递归，因为返回的是list，所以取第一个字符串元素
+	except:
+		pass
+
+
+def get_page_urls(page_url):
+    response = requests.get(page_url)
+    soup = bs4.BeautifulSoup(response.text)
+    return [a.attrs.get('href') for a in soup.select('div.dribbble-img a')]
+
+def get_img_url(half_url):
+    response = requests.get(root_url + half_url)
+    soup = bs4.BeautifulSoup(response.text)
+    attach_list = [a.attrs.get('href') for a in soup.select('ul.thumbs a')]
+    if(attach_list):
+    	return get_attach_url(attach_list)
+
+    img_url = [a.attrs.get('src') for a in soup.select('div.single-grid img')]
+    return img_url
+
+def has_next_page(page_url):
+	response = requests.get(page_url)
+	soup = bs4.BeautifulSoup(response.text)
+	return [a.attrs.get('href') for a in soup.select('div.pagination a.next_page')]
+
+def get_attach_url(attach_list):
+	img_url=[]
+	for attach_url in attach_list:
+		response = requests.get(root_url + attach_url)
+		soup = bs4.BeautifulSoup(response.text)
+		img_url+=[a.attrs.get('src') for a in soup.select('div#viewer-img img')]
+	return img_url
+
+if __name__ == '__main__':
+    p = Pool(8)
+    p.map(get_page_images, [search_url1,search_url2,search_url3])
+
+
+{% endhighlight %}
 [1]:http://zh.wikipedia.org/zh/%E5%B8%83%E9%9A%86%E8%BF%87%E6%BB%A4%E5%99%A8
 
 [2]:http://wuchong.me/blog/2014/04/24/easy-web-scraping-with-python/

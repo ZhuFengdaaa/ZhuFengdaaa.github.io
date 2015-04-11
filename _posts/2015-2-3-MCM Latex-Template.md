@@ -82,7 +82,7 @@ LaTex 的作者 D. E. Knuth 的 TeXbook. 这当然是最权威的读物了。无
 如果你想稍微了解一下Tex工作原理，那先从这本书看起吧。
 比上面的Texbook相对好懂一点。
 
-[LatexCommandSummary.pdf](\files\LatexCommandSummary)
+[LatexCommandSummary.pdf](\files\LatexCommandSummary.pdf)
 
 14页的LaTeX命令速查手册，可以备一本电子书或者打印一份放在手边备用。
 
