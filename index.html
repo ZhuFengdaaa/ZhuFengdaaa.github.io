@@ -5,118 +5,15 @@ description: Home Page for Jekyll Metro Theme
 ---
 
 <div class="container">
-
-	<header class="row">
-	  <div class="col-md-3 col-sm-3" style="margin-top:25px;margin-bottom:15px">
-	    <h1 id="pin">{{site.title}}</h1>
-	  </div>
-	  <div class="col-md-6 col-sm-12" style="margin-top:25px;margin-bottom:15px">
-	    <a  href={{site.gplus}}>
-              <img alt="Photo" class="avatar" src="{{site.avatarurl}}">
-		</a>
-	  </div>
-	</header>
-	<nav>
-		<div class="row" style="margin-top:25px">
-
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<div class="live-tile" data-mode="flip" data-delay="4000">
-					<div>
-						<a href="/about/" title="About" class="tile purple bord about-icon"></a>
-					</div>
-					<div>
-						<a href="/about/" title="About" class="tile purple bord about1-icon"></a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<div class="live-tile" data-mode="flip" data-delay="4000">
-					<div>
-						<a href="/blog/" title="Blog" class="tile orange bord icon-blog"></a>
-					</div>
-					<div>
-						<a href="/blog/" title="Blog" class="tile orange bord icon-blog1"></a>
-					</div>
-				</div>
-			</div>
-
-			<div class="col-md-2 col-sm-3 col-xs-6">
-				<div class="live-tile" data-mode="flip" data-delay="4000">
-					<div>
-						<a href="/archive/" title="Archive" class="tile green bord tag-icon"></a>
-					</div>
-					<div>
-						<a href="/archive/" title="Archive" class="tile green bord tag1-icon"></a>
-					</div>
-				</div>
-			</div>
-
-			
-		</div>
-
-		<div class="row" style="margin-top:25px">
-
-			<!-- <div class="col-md-4 col-sm-6 col-xs-12">
-				{% for post in site.posts offset:1 limit:1 %}
-				<a href="{{post.url}}">
-					<div class="tile green bord">
-						<h3 class="title">Recent Article</h3>
-						<h4 class="title">{{ post.title }}</h4>
-						<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
-					</div>
-				</a>
-				{% endfor %}
-			</div> -->
-
-			<div class="col-md-4 col-sm-6 col-xs-12">
-				{% for post in site.posts limit:1 %}
-				<a href="{{post.url}}">
-					<div class="tile blue bord">
-						<h3 class="title">Latest Article</h3>
-						<h4 class="title">{{ post.title }}</h4>
-						<p> {{ post.content | strip_html | truncate: 45 }}</p>
-					</div>
-				</a>
-				{% endfor %}
-			</div>
-
-			<!-- <div class="col-md-4 col-sm-6 col-xs-12">
-				{% for post in site.posts %}
-					{% if post.featured == true %}
-					<a href="{{post.url}}">
-						<div class="tile orange bord">
-							<h3 class="title">Featured Article</h3>
-							<h4 class="title">{{ post.title }}</h4>
-							<p> {{ post.content | strip_html | truncatewords: 10 }}</p>
-						</div>
-					</a>
-					{% break %}
-					{% endif %}
-				{% endfor %}
-			</div> -->
-
-			<!-- Mini tile -->
-			<!-- <div class="col-md-2 col-sm-3 col-xs-6 rside">
-				<div class="row">
-					<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6">
-					    <a href="{{site.linkedin}}" class="mtile blue bord lk-ico-sm"></a>
-					</div>
-					<div style="padding-left:0px" class="col-md-6 col-sm-6 col-xs-6">
-						<a href="{{site.twitter}}"  class="mtile blue bord tw-ico-sm"></a>
-					</div>
-				
-					<div  class="col-md-6 col-sm-6 col-xs-6 rep-1">
-						<a href="{{site.facebook}}" class="mtile purple bord fk-ico-sm"></a>
-					</div>
-					<div  class="col-md-6 col-sm-6 col-xs-6 rep-2">
-						<a href="{{site.gplus}}" class="mtile orange bord gl-ico-sm"></a>
-					</div>
-				</div>
-			</div> -->
-			<!-- End of Mini tile-->
-			
-		</div>
-
-	</nav>
+	<div class="nav-wrapper">
+		<div class="col-md-4 index-header">Le Petit Prince</div>
+		<ul class="col-md-offset-7 nav-menu">
+			<li class="nav-item"><a>Blog</a></li>
+			<li class="nav-item"><a>About</a></li>
+			<li class="nav-item"><a>Daily</a></li>
+			<li class="nav-item"><a>Search</a></li>
+		</ul>
+	</div>
+	<div class="col-md-8 col-md-offset-2 index-slogan">Le Petit Prince's Planet</div>
+	<div class="col-md-2 col-md-offset-5 index-button"><a>VISIT</a></div>
 </div>

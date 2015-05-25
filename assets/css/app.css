@@ -1,4 +1,114 @@
+/*====master====*/
+body{
+    font-family: Microsoft YaHei;
+    line-height:200%;
+    cursor: default;
+
+    /*禁止文字选中*/
+   -moz-user-select: none; /*火狐*/
+   -webkit-user-select: none;  /*webkit浏览器*/
+   -ms-user-select: none;   /*IE10*/
+   -khtml-user-select: none; /*早期浏览器*/
+   user-select: none;
+}
+
+
+/*====index====*/
+.nav-wrapper{
+    margin-top: 20px;
+}
+
+.index-header{
+    font-size: 35px;
+}
+
+.nav-menu{
+    height: 40px;
+}
+
+.nav-item{
+    width: 18%;
+    font-size: 20px;
+    display: inline-block;
+    list-style: none;
+    color: #ffffff;
+    cursor: pointer;
+
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 50px;
+    border-width: 3px; 
+
+    transition: border-color .7s;
+    transition-timing-function: ease;
+}
+
+.nav-item:hover{
+    border-color:#ffffff;
+    color: #ffffff;
+}
+
+.nav-item a{
+    display: block;
+    text-align: center;
+    color: #ffffff;
+}
+
+.nav-item a:hover{
+    color: #ffffff;
+}
+
+.index-slogan{
+    margin-top: 140px;
+    text-align: center;
+    font-size: 50px;
+}
+
+@keyframes flicker {
+  0% { border-color: transparent; }
+  50% { border-color:#ffffff; }
+  100% { border-color: transparent; }
+}
+
+.index-button{
+    line-height:130%;
+    margin-top: 160px;
+
+    font-size: 40px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #ffffff;
+    text-align: center;
+
+    color: #ffffff;
+    cursor: pointer;
+
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 50px;
+    border-width: 3px; 
+}
+
+.index-button:hover{
+    animation: 1.4s flicker infinite;
+}
+
+.index-button a{
+    display: block;
+    text-align: center;
+    color: #ffffff;
+}
+
+.index-button a:hover{
+    color: #ffffff;
+}
+
 /*User---*/
+
+.footer{
+    position: absolute;
+    bottom: 10px;
+}
 
 .avatar{
     width: 50px;
