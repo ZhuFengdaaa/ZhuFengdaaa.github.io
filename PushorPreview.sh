@@ -20,10 +20,8 @@ do
 		s)
 			commentString="s/"`grep pygments _config.yml`"/# highlighter: pygments/g"
 			antiCommentString="s/"`grep rouge _config.yml`"/highlighter: rouge/g"
-			
 			sed -i "$commentString" _config.yml
 			sed -i "$antiCommentString" _config.yml
-
 			jekyll s						
 			;;
 		m)

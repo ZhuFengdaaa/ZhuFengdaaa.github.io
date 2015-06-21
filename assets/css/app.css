@@ -4,8 +4,7 @@ body{
     line-height:200%;
     cursor: default;
 
-    /*禁止文字选中*/
-   -moz-user-select: none; /*火狐*/
+  	-moz-user-select: none; /*火狐*/
    -webkit-user-select: none;  /*webkit浏览器*/
    -ms-user-select: none;   /*IE10*/
    -khtml-user-select: none; /*早期浏览器*/
@@ -59,7 +58,9 @@ body{
 }
 
 .index-slogan{
-    margin-top: 140px;
+    line-height:180%;
+    font-family: Italy;
+    margin-top: 40px;
     text-align: center;
     font-size: 50px;
 }
@@ -72,7 +73,7 @@ body{
 
 .index-button{
     line-height:130%;
-    margin-top: 160px;
+    margin-top: 60px;
 
     font-size: 40px;
     border-radius: 50px;
@@ -106,7 +107,6 @@ body{
 /*User---*/
 
 .footer{
-    position: absolute;
     bottom: 10px;
 }
 
