@@ -11,7 +11,7 @@ do
 			message=`date +%Y-%m-%d-%H-%M-%S`
 			git add --all
 			git commit -m "$message"
-			git push
+			git push -u
 
 			echo "Push Finished"
 			echo "Push Message $message"
@@ -33,7 +33,7 @@ do
 
 			git add --all
 			git commit -m "$OPTARG"
-			git push
+			git push -u
 
 			echo "Push Finished"
 			echo "Push Message $OPTARG"
