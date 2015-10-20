@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 写在前面的话
-description: --by ZhuFengdaaa
 theme: purple
 ---
 ###欢迎大家来到我的博客。
