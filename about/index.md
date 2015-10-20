@@ -3,6 +3,7 @@ layout: page
 title: 写在前面的话
 theme: purple
 ---
+
 ###欢迎大家来到我的博客。
 
 ###搭建目的
